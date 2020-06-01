@@ -1,0 +1,10 @@
+package emmanuel_Ajayi_exercise1;
+
+public class SortNumbersTest {
+
+	public static void main(String[] args) {
+		int[] numbers= {2,3,4,5,5,4,5};
+		SortNumbers.SortNumbers1(numbers);
+	}
+
+}

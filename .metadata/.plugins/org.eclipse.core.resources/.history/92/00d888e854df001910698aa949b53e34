@@ -1,0 +1,23 @@
+package emmanuel_Ajayi_exercise1;
+public class SortNumbers {
+          public static void SortNumbers1(int...numbers) {
+		  
+        	  for(int i=0;i<numbers.length;i++){
+        	        for(int j=i+1;j<numbers.length;j++){
+        	            if(numbers[i]<numbers[j]){
+        	            int temp=numbers[i];
+        	                numbers[i]=numbers[j];
+        	                numbers[j]=temp;
+        	            }
+        	        }
+        	        }
+        	  System.out.print("\n Result of a Descending Array");
+        	  for(int i=0;i<numbers.length;i++){
+            
+
+          }
+		  
+	}
+
+
+}

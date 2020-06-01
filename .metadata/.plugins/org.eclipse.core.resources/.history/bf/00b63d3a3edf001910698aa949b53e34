@@ -1,0 +1,11 @@
+package emmanuel_Ajayi_exercise1;
+
+public class SortNumbersTest {
+
+	public static void main(String[] args) {
+		SortNumbers num=new SortNumbers();
+		num.SortNumbers1();
+
+	}
+
+}

@@ -1,0 +1,59 @@
+package emmanuel_Ajayi_exercise1;
+
+import java.util.Scanner;
+
+public class QuestionBank {
+String[] multichoice;
+Boolean isCorrect;
+Scanner input=new Scanner(System.in);
+
+public  void simulateQuestion() {
+  multichoice = new String[5];
+  multichoice[0]="1.Information is passed to a method in?";
+  multichoice[1]="2.A well designed method?\nA)Performs multiple unrelated tasks\nB)Repeats code found in other methods\nC)"
+  		+ "Contains thousands of lines of code\nD)Perform a single,well defined task\n";
+  multichoice[2]="3.Which of the following methods is not in the math class?\nA)Ceil\nB)abs\nC)Parse int\nD)Log\n";
+  multichoice[3]="4.A field declared with keyword_________________is constant?\nA)Static\nB)Const\nC)Constan\nD)Final\n";
+  multichoice[4]="5.Which operator can be used in string concactenation?\nA)*\nB)+=\nC)++\nD)=+\n";
+  for(String i :multichoice) {
+	  System.out.println(i);
+  } 
+}
+public void inputAnswer()
+{
+	
+}
+public void CheckAnswer() 
+{
+	  String userSelect1 = multichoice[0];
+	if(userSelect1==multichoice[0]){
+        System.out.println(multichoice[0]);
+        System.out.println("A. The method name");
+        System.out.println("B. Thats's methods return");
+        System.out.println("C. The methods body");
+        System.out.println("D.The arguments to the method");
+        System.out.println();
+        System.out.print("Your answer: ");
+        String uSelect1 = input.next();
+
+        switch (uSelect1.toUpperCase()){
+            case "A":
+                System.out.println("Incorrect!\n\n");
+                break;
+            case "B":
+            	System.out.println("Incorrect!\n\n");
+                break;
+            case "C":
+                System.out.println("Incorrect!\n\n");
+                break;
+            case "D":
+            	 System.out.println("Correct!\n\n");
+            default: 
+                uSelect1 = "Incorrect, choice.\n\n";
+                break;
+        }
+    }
+}
+
+
+}

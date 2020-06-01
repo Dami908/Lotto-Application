@@ -1,0 +1,66 @@
+package emmanuel_Ajayi_exercise1;
+
+import java.security.SecureRandom;
+import java.security.Signer;
+import java.util.Scanner;
+
+public class Lotto {
+private int[] numbers= {0,0,0};
+private int total;
+private static int count = 0;
+Scanner input=new Scanner(System.in);
+
+public int[] getNumbers() {
+	return numbers;
+}
+public int getTotal() {
+	return total;
+}
+
+public Lotto() {
+
+	final SecureRandom RandomNumbers=new SecureRandom();
+	int i=0;
+	
+	while(i<3) {
+		numbers[i]=RandomNumbers.nextInt(9);
+		numbers[i]+=1;
+		total=total+numbers[i];
+		//System.out.println(numbers[i]);
+		i++;
+	}
+}
+public void simulatelotto() {
+	int i=0;
+	
+	while(count<5) {
+		Scanner input=new Scanner(System.in);
+		Lotto test2=new Lotto();
+		count++;
+		System.out.println("\nWelcome to lotto");
+		System.out.println("Pick a number between 3 and 27");
+		//System.out.println(test2.getSum());
+		int guess=input.nextInt();
+		if(guess==test2.getTotal()) {
+			System.out.println("Congratulations you Win");
+			break;
+		}
+		else if(count<=5) {
+			System.out.println("Better Luck next time");
+			System.out.println("Your lotto winning number was "+test2.getTotal());
+			
+		}
+		//else if((input.nextInt()>27)||(input.nextInt()<3)&&(count<=5)) {
+			//System.out.println("Game over,Please start again");
+		//}
+	}
+	 if(count>=5) {
+		System.out.println("\nYou lose, Computer wins");
+	 }
+}
+public static int getCount() {
+	return count;
+}
+
+}
+

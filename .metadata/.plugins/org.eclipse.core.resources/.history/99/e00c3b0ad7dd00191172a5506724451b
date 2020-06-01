@@ -1,0 +1,89 @@
+package emmanuel_Ajayi_exercise1;
+
+import java.util.Scanner;
+
+public class kjbkhvgcg {
+
+	public static void main(String[] args) {
+		String[] multiChoice1;
+		int score = 0;
+	    Scanner input = new Scanner(System.in);
+
+	    multiChoice1 = new String[5];
+	    multiChoice1[0] = "1. Information is passed to a method in?";
+	    multiChoice1[1] = "2. A well designed method?";
+	    multiChoice1[2] = "blah blah";
+	    multiChoice1[3] = "blah blah";
+	    multiChoice1[4] = "blah blah";
+
+	    String userSelect1 = multiChoice1[0];
+	    String userSelect2 = multiChoice1[1];
+
+
+	    if(userSelect1==multiChoice1[0]){
+	        System.out.println(multiChoice1[0]);
+	        System.out.println("A. The method name");
+	        System.out.println("B. Thats's methods return");
+	        System.out.println("C. The methods body");
+	        System.out.println("D.The arguments to the method");
+	        System.out.println();
+	        System.out.print("Your answer: ");
+	        String uSelect1 = input.next();
+
+	        switch (uSelect1.toUpperCase()){
+	            case "A":
+	                System.out.println("Incorrect!\n\n");
+	                break;
+	            case "B":
+	            	System.out.println("Incorrect!\n\n");
+	                break;
+	            case "C":
+	                System.out.println("Incorrect!\n\n");
+	                break;
+	            case "D":
+	            	 System.out.println("Correct!\n\n");
+		                //scorePro++;
+		                score++;
+	            default: 
+	                uSelect1 = "Incorrect, choice.\n\n";
+	                break;
+	        }
+	        System.out.printf("Your total score is  %d%n ", score);
+	    }
+	    //
+	    if(userSelect2==multiChoice1[1]){
+	        System.out.println(multiChoice1[0]);
+	        System.out.println("A. The method name");
+	        System.out.println("B. Thats's methods return");
+	        System.out.println("C. The methods body");
+	        System.out.println("D.The arguments to the method");
+	        System.out.println();
+	        System.out.print("Your answer: ");
+	        String uSelect2 = input.next();
+
+	        switch (uSelect2.toUpperCase()){
+	            case "A":
+	                System.out.println("Incorrect!\n\n");
+	                break;
+	            case "B":
+	            	System.out.println("Incorrect!\n\n");
+	                break;
+	            case "C":
+	                System.out.println("Incorrect!\n\n");
+	                break;
+	            case "D":
+	            	 System.out.println("Correct!\n\n");
+		                //scorePro++;
+		                score++;
+	            default: 
+	                uSelect2 = "Incorrect, choice.\n\n";
+	                break;
+	        }
+	        System.out.printf("Your total score is  %d%n ", score);
+	    }
+	    //
+	
+
+	}
+
+}

@@ -1,0 +1,57 @@
+package emmanuel_Ajayi_exercise1;
+
+import java.util.Scanner;
+
+public class kjbkhvgcg {
+
+	public static void main(String[] args) {
+		String[] multiChoice1;
+		int score = 0;
+	    Scanner input = new Scanner(System.in);
+
+	    multiChoice1 = new String[5];
+	    multiChoice1[0] = "1. Who is the best plsayer in liverpool?\n";
+	    multiChoice1[1] = "blah blah";
+	    multiChoice1[2] = "blah blah";
+	    multiChoice1[3] = "blah blah";
+	    multiChoice1[4] = "blah blah";
+
+	    String userSelect1 = multiChoice1[0];
+
+	    if(userSelect1==multiChoice1[0]){
+	        System.out.println(multiChoice1[0]);
+	        System.out.println("A. Salah");
+	        System.out.println("B. Firmino");
+	        System.out.println("C. Torres");
+	        System.out.println("D. Mane");
+	        System.out.println();
+	        System.out.print("Your answer: ");
+	        String uSelect1 = input.next();
+
+	        switch (uSelect1.toUpperCase()){
+	            case "A":
+	                System.out.println("Incorrect!\n\n");
+	                break;
+	            case "B":
+	                System.out.println("Correct!\n\n");
+	                //scorePro++;
+	                score++;
+	                break;
+	            case "C":
+	                System.out.println("Incorrect!\n\n");
+	                break;
+	            case "D":
+	                System.out.println("Incorrect!\n\n");
+	                break;
+	            default: 
+	                uSelect1 = "Incorrect, choice.\n\n";
+	                break;
+	        }
+	        System.out.printf("Your total score is  %d%n ", score);
+	    }
+	    //
+	
+
+	}
+
+}

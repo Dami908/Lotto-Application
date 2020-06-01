@@ -1,0 +1,27 @@
+package emmanuel_Ajayi_exercise1;
+
+import java.util.Scanner;
+
+public class QuestionBank {
+String[] multichoice = new String[6];
+Scanner input=new Scanner(System.in);
+
+public  void simulateQuestion() {
+  multichoice[0]="1.What is your name?\n";
+  multichoice[1]="Where are you from";
+  multichoice[2]="blah blah";
+  multichoice[3]="blah blah";
+  multichoice[4]="blah blah";
+  multichoice[5]="blah blah";
+  for(String i :multichoice) {
+	  System.out.println(i);
+  } 
+}
+public void CheckAnswer() 
+{
+	simulateQuestion();
+	if()
+}
+
+
+}

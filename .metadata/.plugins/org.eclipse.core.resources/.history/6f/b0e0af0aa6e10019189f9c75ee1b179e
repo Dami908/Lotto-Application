@@ -1,0 +1,29 @@
+package emmanuel_Ajayi_exercise1;
+
+public class Question {
+	String question;
+	String answer1;
+	String answer2;
+	String answer3;
+	String answer4;
+	int rightAnswer;
+	public String getQuestion()
+	{
+		return question;
+	}
+	
+	public Question() {}
+	
+	public Question(String quest, String ans1, String ans2, String ans3, String ans4, int right) {
+		question = quest;
+		answer1 = ans1;
+		answer2 = ans2;
+		answer3 = ans3;
+		answer4 = ans4;
+		rightAnswer = right;
+	}
+	@Override
+	public String toString() {
+		return question+"\n"+answer1+"\n"+answer2+"\n"+answer3+"\n"+answer4;
+	}
+}

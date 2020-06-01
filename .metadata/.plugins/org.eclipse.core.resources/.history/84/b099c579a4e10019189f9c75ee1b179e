@@ -1,0 +1,98 @@
+package emmanuel_Ajayi_exercise1;
+
+import java.util.ArrayList;
+import java.util.Random;
+import java.util.Scanner;
+
+public class QuestionBank {
+Boolean isCorrect;
+int score;
+int total;
+Scanner input=new Scanner(System.in);
+Random rnd = new Random();
+
+public  Question[] simulateQuestion() {
+	
+	ArrayList<Question> questions = new ArrayList<Question>();
+	questions.add(new Question("Information is passed to a method in?", "1.The method name", "2.The arguments to the method", "3.Thats's methods return", "4.The methods body", 2));
+	questions.add(new Question("A well designed method?", "1.Perform a single,well defined task", "2.Performs multiple unrelated tasks", "3.Repeats code found in other methods", "4.Contains thousands of lines of code", 1));
+	questions.add(new Question("Which of the following methods is not in the math class?", "1.Ceil", "2.Parse int", "3.abs", "4.Log", 2));
+	questions.add(new Question("A field declared with keyword_________________is constant?", "1.Static", "2.Const", "Constan", " 4.Final", 4));
+	questions.add(new Question("Which operator can be used in string concactenation?", "1. *", "2. ++", "3. +=", "4.=+", 3));
+//  multichoice = new String[5];
+//  multichoice[0]="1.";
+//  multichoice[1]="2.\nA)Performs multiple unrelated tasks\nB)Repeats code found in other methods\nC)"
+//  		+ "Contains thousands of lines of code\nD)Perform a single,well defined task\n";
+//  multichoice[2]="3.\nA)Ceil\nB)abs\nC)Parse int\nD)Log\n";
+//  multichoice[3]="4.\nA)Static\nB)Const\nC)Constan\nD)Final\n";
+//  multichoice[4]="5.\nA)*\nB)+=\nC)++\nD)=+\n";
+	Question[] questionsInPlay = new Question[5];
+	Question temp = new Question();
+	boolean exists = false;
+	for (int i = 0; i < 5; i++) {
+		do {
+			temp = questions.get(rnd.nextInt(5));
+			for (int j = 0; j < questionsInPlay.length; j++) {
+				if (questionsInPlay[j] != null) {
+					if (questionsInPlay[j].question == temp.question) {
+						exists = true;
+					} 
+					else {
+						exists = false;
+					}
+				}
+			}
+		} while (exists == true);
+		questionsInPlay[i] = temp;
+	}
+	return questionsInPlay;
+}
+public void inputAnswer()
+{
+	int userAnswer;
+	Question[] questions = simulateQuestion();
+	for (int i = 0; i < questions.length; i++) {
+		System.out.println(questions[i].toString());
+		System.out.print("Select your answer: ");
+		userAnswer = input.nextInt();
+		generateMessage(CheckAnswer(questions[i], userAnswer));
+	}
+}
+public boolean CheckAnswer(Question question, int userAnswer) 
+{
+	if (question.rightAnswer == userAnswer) {
+		isCorrect = true;
+		score++;
+		System.out.printf("Your current score is",score);
+	}
+	else {
+		isCorrect = false;
+	}
+	return isCorrect;
+}
+
+public void generateMessage(boolean result) {
+	if (result) {
+		int message = rnd.nextInt(4);
+		switch (message) {
+		case 0:
+			System.out.println("GoodWork");
+			break;
+		default:
+			System.out.println("Nice done!");
+		}
+	}
+	else {
+		int message = rnd.nextInt(4);
+		switch (message) {
+		case 0:
+			System.out.println("How come?");
+			break;
+		default:
+			System.out.println("Badly done!");
+		}
+	}
+}
+
+
+}

@@ -1,0 +1,184 @@
+package emmanuel_Ajayi_exercise1;
+
+import java.util.Scanner;
+
+public class kjbkhvgcg {
+
+	public static void main(String[] args) {
+		String[] multiChoice1;
+		int score = 0;
+		int total;
+	    Scanner input = new Scanner(System.in);
+
+	    multiChoice1 = new String[5];
+	    multiChoice1[0] = "1. Information is passed to a method in?";
+	    multiChoice1[1] = "2. A well designed method?";
+	    multiChoice1[2] = "3.Which of the following methods is not in the math class?";
+	    multiChoice1[3] = "4.A field declared with keyword_________________is constant?";
+	    multiChoice1[4] = "5.Which operator can be used in string concactenation?";
+
+	    String userSelect1 = multiChoice1[0];
+	    String userSelect2 = multiChoice1[1];
+	    String userSelect3 = multiChoice1[2];
+	    String userSelect4=multiChoice1[3];
+	    String userSelect5=multiChoice1[4];
+
+
+	    if(userSelect1==multiChoice1[0]){
+	        System.out.println(multiChoice1[0]);
+	        System.out.println("A. The method name");
+	        System.out.println("B. Thats's methods return");
+	        System.out.println("C. The methods body");
+	        System.out.println("D.The arguments to the method");
+	        System.out.println();
+	        System.out.print("Your answer: ");
+	        String uSelect1 = input.next();
+
+	        switch (uSelect1.toUpperCase()){
+	            case "A":
+	                System.out.println("Incorrect!\n\n");
+	                break;
+	            case "B":
+	            	System.out.println("Incorrect!\n\n");
+	                break;
+	            case "C":
+	                System.out.println("Incorrect!\n\n");
+	                break;
+	            case "D":
+	            	 System.out.println("Correct!\n\n");
+		                //scorePro++;
+		                score++;
+	            default: 
+	                uSelect1 = "Incorrect, choice.\n\n";
+	                break;
+	        }
+	    }
+	    //
+	    if(userSelect2==multiChoice1[1]){
+	        System.out.println(multiChoice1[1]);
+	        System.out.println("A. Performs multiple unrelated tasks");
+	        System.out.println("B. Repeats code found in other methods");
+	        System.out.println("C. Contains thousands of lines of code");
+	        System.out.println("D.Perform a single,well defined task");
+	        System.out.println();
+	        System.out.print("Your answer: ");
+	        String uSelect2 = input.next();
+
+	        switch (uSelect2.toUpperCase()){
+	            case "A":
+	                System.out.println("Incorrect!\n\n");
+	                break;
+	            case "B":
+	            	System.out.println("Incorrect!\n\n");
+	                break;
+	            case "C":
+	                System.out.println("Incorrect!\n\n");
+	                break;
+	            case "D":
+	            	 System.out.println("Correct!\n\n");
+		                //scorePro++;
+		                score++;
+	            default: 
+	                uSelect2 = "Incorrect, choice.\n\n";
+	                break;
+	        }
+	       
+	    }
+	    if(userSelect3==multiChoice1[2]){
+	        System.out.println(multiChoice1[2]);
+	        System.out.println("A. Ceil");
+	        System.out.println("B. abs");
+	        System.out.println("C. Parse int");
+	        System.out.println("D. Log");
+	        System.out.println();
+	        System.out.print("Your answer: ");
+	        String uSelect3 = input.next();
+
+	        switch (uSelect3.toUpperCase()){
+	            case "A":
+	                System.out.println("Incorrect!\n\n");
+	                break;
+	            case "B":
+	            	System.out.println("Incorrect!\n\n");
+	                break;
+	            case "C":
+	                System.out.println("correct!\n\n");
+	                score++;
+	                break;
+	            case "D":
+	            	 System.out.println("InCorrect!\n\n");
+		                //scorePro++;
+		                
+	            default: 
+	                uSelect3 = "Incorrect, choice.\n\n";
+	                break;
+	        }
+	    }
+	    //
+	    if(userSelect4==multiChoice1[3]){
+	        System.out.println(multiChoice1[3]);
+	        System.out.println("A. Static");
+	        System.out.println("B. Const");
+	        System.out.println("C. Constan");
+	        System.out.println("D. Final");
+	        System.out.println();
+	        System.out.print("Your answer: ");
+	        String uSelect4 = input.next();
+
+	        switch (uSelect4.toUpperCase()){
+	            case "A":
+	                System.out.println("Incorrect!\n\n");
+	                break;
+	            case "B":
+	            	System.out.println("Incorrect!\n\n");
+	                break;
+	            case "C":
+	                System.out.println("Incorrect!\n\n");
+	                break;
+	            case "D":
+	            	 System.out.println("Correct!\n\n");
+		                //scorePro++;
+		                score++;
+	            default: 
+	                uSelect4 = "Incorrect, choice.\n\n";
+	                break;
+	        }
+	    }
+	    if(userSelect5==multiChoice1[4]){
+	        System.out.println(multiChoice1[4]);
+	        System.out.println("A. *");
+	        System.out.println("B. +=");
+	        System.out.println("C. ++");
+	        System.out.println("D.=+");
+	        System.out.println();
+	        System.out.print("Your answer: ");
+	        String uSelect5 = input.next();
+
+	        switch (uSelect5.toUpperCase()){
+	            case "A":
+	                System.out.println("Incorrect!\n\n");
+	                break;
+	            case "B":
+	            	System.out.println("correct!\n\n");
+	            	score++;
+	                break;
+	            case "C":
+	                System.out.println("Incorrect!\n\n");
+	                break;
+	            case "D":
+	            	 System.out.println("InCorrect!\n\n");
+		                //scorePro++;
+	            default: 
+	                uSelect5 = "Incorrect, choice.\n\n";
+	                break;
+	        }
+	    }
+	    total=score/5*100;
+	
+	
+		 System.out.printf("Your total score is  %d%n ", score);
+		 System.out.printf("Your total percent is  %d%n ", total);
+	}
+
+
+}

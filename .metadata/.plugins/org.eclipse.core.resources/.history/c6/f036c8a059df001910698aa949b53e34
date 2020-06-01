@@ -1,0 +1,50 @@
+package emmanuel_Ajayi_exercise1;
+
+import java.security.SecureRandom;
+import java.security.Signer;
+import java.util.Scanner;
+
+public class Lotto {
+private int[] numbers= {0,0,0};
+private int sum;
+Scanner input=new Scanner(System.in);
+
+public int[] getNumbers() {
+	return numbers;
+}
+public int getSum() {
+	return sum;
+}
+
+public Lotto() {
+	final SecureRandom RandomNumbers=new SecureRandom();
+	int i=0;
+	
+	while(i<2) {
+		numbers[i]=RandomNumbers.nextInt(3);
+		sum=sum+numbers[i];
+		System.out.println(numbers[i]);
+		i++;
+	}
+}
+public void simulatelotto() {
+	int i=0;
+	while(i<5) {
+		Scanner input=new Scanner(System.in);
+		Lotto test2=new Lotto();
+		System.out.println("Welcome to lotto"+(i+1));
+		System.out.println("Pick a number between 3 and 27");
+		System.out.println(test2.getSum());
+		int guess=input.nextInt();
+		if(guess==test2.getSum()) {
+			System.out.println("Congratulations ");
+		}
+		else {
+			System.out.println("Better luck next time");
+		}
+		
+	}
+}
+
+}
+

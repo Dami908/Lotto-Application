@@ -1,0 +1,10 @@
+package emmanuel_Ajayi_exercise1;
+
+public class LottoTest {
+
+	public static void main(String[] args) {
+		Lotto test=new Lotto();
+		test.simulatelotto();3
+	}
+
+}

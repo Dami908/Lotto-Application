@@ -1,0 +1,16 @@
+package emmanuel_Ajayi_exercise1;
+
+import java.util.Arrays;
+import java.util.Collections;
+
+public class SortNumbers {
+          void SortNumbers1(int...numbers) {
+		  Integer[] arr = {13, 7, 6, 45, 21, 9, 2, 100}; 
+		  Arrays.sort(arr, Collections.reverseOrder());
+		  System.out.printf("Modified arr[] : %s", 
+                  Arrays.toString(arr)); 
+		  
+	}
+
+
+}

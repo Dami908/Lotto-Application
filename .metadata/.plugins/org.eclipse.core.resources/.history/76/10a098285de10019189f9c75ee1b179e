@@ -1,0 +1,11 @@
+package emmanuel_Ajayi_exercise1;
+
+public class QuestionBankTest {
+
+	public static void main(String[] args) {
+		QuestionBank Student=new QuestionBank();
+		Student.CheckAnswer();
+
+	}
+
+}

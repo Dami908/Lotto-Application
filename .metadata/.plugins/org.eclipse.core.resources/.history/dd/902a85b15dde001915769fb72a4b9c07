@@ -1,0 +1,30 @@
+package emmanuel_Ajayi_exercise1;
+
+import java.util.Scanner;
+
+public class QuestionBank {
+String[] multichoice = new String[5];
+Boolean isCorrect;
+Scanner input=new Scanner(System.in);
+
+public  void simulateQuestion() {
+  multichoice[0]="1.Information is passed to a method in?\nA)The method name\nB)Thats's methods return\n"
+	  		+ "C)The methods body\nD)The arguments to the method\n";
+  multichoice[1]="2.A well designed method?\nA)Performs multiple unrelated tasks\nB)Repeats code found in other methods\nC)"
+  		+ "Contains thousands of lines of code\nD)Perform a single,well defined task\n";
+  multichoice[2]="3.Which of the following methods is not in the math class?\nA)Ceil\nB)abs\nC)Parse int\nD)Log\n";
+  multichoice[3]="4.A field declared with keyword_________________is constant?\nA)Static\nB)Const\nC)Constan\nD)Final\n";
+  multichoice[4]="5.Which operator can be used in string concactenation?\nA)*\nB)+=\nC)++\nD)=+\n";
+  for(String i :multichoice) {
+	  System.out.println(i);
+  } 
+}
+public void CheckAnswer() 
+{
+	simulateQuestion();
+	String uselect=multichoice[0];
+	if()
+}
+
+
+}

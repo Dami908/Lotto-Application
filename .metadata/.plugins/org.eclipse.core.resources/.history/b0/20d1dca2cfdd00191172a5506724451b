@@ -1,0 +1,30 @@
+package emmanuel_Ajayi_exercise1;
+
+import java.util.Scanner;
+
+public class kjbkhvgcg {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String[] multichoice = new String[6];
+		Scanner input=new Scanner(System.in);
+	
+
+	
+		  multichoice[0]=  multichoice[0]="1.Information is passed to a method in?\nA)The method name\nB)Thats's methods return\n"
+			  		+ "C)The methods body\nD)The arguments to the method\n";;
+			  		
+		  multichoice[1]="Where are you from";
+		  multichoice[2]="blah blah";
+		  multichoice[3]="blah blah";
+		  multichoice[4]="blah blah";
+		  multichoice[5]="blah blah";
+		  for(String i :multichoice) {
+			  System.out.println(i);
+		  }
+		  
+	
+
+	}
+
+}

@@ -1,0 +1,18 @@
+package emmanuel_Ajayi_exercise1;
+
+public class SortNumbersTest {
+
+	public static void main(String[] args) {
+		int[] numbers= {2,3,4,5,5,4,5};
+		SortNumbers.SortNumbers1(numbers);
+		
+		int[] numbers1= {25,67,89,90,25,67,90};
+		SortNumbers.SortNumbers1(numbers1);
+		
+		int[] numbers2= {101,670,894,909,25,67,90};
+		SortNumbers.SortNumbers1(numbers2);
+		
+		
+	}
+
+}
